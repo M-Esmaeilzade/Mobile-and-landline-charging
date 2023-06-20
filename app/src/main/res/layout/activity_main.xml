@@ -6,6 +6,316 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/totleLayout"
+                android:layout_width="match_parent"
+                android:layout_height="265dp"
+                android:background="@color/white">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgTitle"
+                    android:layout_width="410dp"
+                    android:layout_height="235dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/lblTitle"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/up" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/lblTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="52dp"
+                    android:text="آسان پرداخت"
+                    android:textColor="#0C0A0A"
+                    android:textSize="30sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.149"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView2"
+                    app:layout_constraintVertical_bias="1.0"
+                    tools:ignore="UnknownId" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="12dp"
+                        android:layout_weight="1"
+                        android:background="#F4D6D6">
+
+                        <androidx.appcompat.widget.AppCompatImageButton
+                            android:id="@+id/btnBuyCharge"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="16dp"
+                            android:background="#F4D6D6"
+                            android:clickable="true"
+                            app:layout_constraintBottom_toTopOf="@+id/lblBuyCharge"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.492"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/phone__1_"
+                            tools:ignore="SpeakableTextPresentCheck" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/lblBuyCharge"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginTop="8dp"
+                            android:text="خرید شارژ"
+                            android:textColor="#E41515"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="@+id/btnBuyCharge"
+                            app:layout_constraintHorizontal_bias="1.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/btnBuyCharge" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="12dp"
+                        android:layout_weight="1"
+                        android:background="#F4D6D6">
+
+                        <androidx.appcompat.widget.AppCompatImageButton
+                            android:id="@+id/btnPayBill"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="16dp"
+                            android:background="#F4D6D6"
+                            android:clickable="true"
+                            app:layout_constraintBottom_toTopOf="@+id/lblPayBill"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.436"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/call"
+                            tools:ignore="SpeakableTextPresentCheck" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/lblPayBill"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="32dp"
+                            android:text="قبض تلفن ثابت"
+                            android:textColor="#E41515"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="@+id/btnPayBill"
+                            app:layout_constraintHorizontal_bias="0.861"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/btnPayBill" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="12dp"
+                        android:layout_weight="1"
+                        android:background="#F4D6D6">
+
+                        <androidx.appcompat.widget.AppCompatImageButton
+                            android:id="@+id/btnBuyGas"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="16dp"
+                            android:background="#F4D6D6"
+                            android:clickable="true"
+                            app:layout_constraintBottom_toTopOf="@+id/lblBuyGas"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.436"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/gas_icon"
+                            tools:ignore="SpeakableTextPresentCheck" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/lblBuyGas"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="32dp"
+                            android:text="قبض گاز"
+                            android:textColor="#E41515"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="@+id/btnBuyGas"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/btnBuyGas" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="12dp"
+                        android:layout_weight="1"
+                        android:background="#F4D6D6">
+
+                        <androidx.appcompat.widget.AppCompatImageButton
+                            android:id="@+id/btnElectricity"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="16dp"
+                            android:background="#F4D6D6"
+                            android:clickable="true"
+                            app:layout_constraintBottom_toTopOf="@+id/lblElectricity"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.436"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/electricity_icon"
+                            tools:ignore="SpeakableTextPresentCheck" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/lblElectricity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="68dp"
+                            android:text="قبض برق"
+                            android:textColor="#E41515"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="@+id/btnElectricity"
+                            app:layout_constraintHorizontal_bias="1.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/btnElectricity" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="12dp"
+                        android:layout_weight="1"
+                        android:background="#F4D6D6">
+
+                        <androidx.appcompat.widget.AppCompatImageButton
+                            android:id="@+id/btnWater"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="#F4D6D6"
+                            android:clickable="true"
+                            app:layout_constraintBottom_toTopOf="@+id/lblWater"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.436"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/water_icon"
+                            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/lblWater"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="32dp"
+                            android:text="قبض آب"
+                            android:textColor="#E41515"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="@+id/btnWater"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/btnWater" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="12dp"
+                        android:layout_weight="1"
+                        android:background="#F4D6D6">
+
+                        <androidx.appcompat.widget.AppCompatImageButton
+                            android:id="@+id/btnInternet"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="16dp"
+                            android:background="#F4D6D6"
+                            android:clickable="true"
+                            app:layout_constraintBottom_toTopOf="@+id/lblInternet"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.436"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/internet"
+                            tools:ignore="SpeakableTextPresentCheck" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/lblInternet"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="32dp"
+                            android:text="خرید اینترنت"
+                            android:textColor="#E41515"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="@+id/btnInternet"
+                            app:layout_constraintHorizontal_bias="1.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/btnInternet" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
