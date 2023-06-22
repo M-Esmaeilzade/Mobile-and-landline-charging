@@ -75,7 +75,7 @@
                         android:background="#F4D6D6">
 
                         <androidx.appcompat.widget.AppCompatImageButton
-                            android:id="@+id/btnBuyCharge"
+                            android:id="@+id/btnCharge"
                             android:layout_width="100dp"
                             android:layout_height="100dp"
                             android:layout_marginStart="8dp"
@@ -84,7 +84,7 @@
                             android:layout_marginBottom="16dp"
                             android:background="#F4D6D6"
                             android:clickable="true"
-                            app:layout_constraintBottom_toTopOf="@+id/lblBuyCharge"
+                            app:layout_constraintBottom_toTopOf="@+id/lblCharge"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintHorizontal_bias="0.492"
                             app:layout_constraintStart_toStartOf="parent"
@@ -93,7 +93,7 @@
                             tools:ignore="SpeakableTextPresentCheck" />
 
                         <androidx.appcompat.widget.AppCompatTextView
-                            android:id="@+id/lblBuyCharge"
+                            android:id="@+id/lblCharge"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="32dp"
@@ -101,10 +101,10 @@
                             android:text="خرید شارژ"
                             android:textColor="#E41515"
                             android:textSize="20sp"
-                            app:layout_constraintEnd_toEndOf="@+id/btnBuyCharge"
+                            app:layout_constraintEnd_toEndOf="@+id/btnCharge"
                             app:layout_constraintHorizontal_bias="1.0"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/btnBuyCharge" />
+                            app:layout_constraintTop_toBottomOf="@+id/btnCharge" />
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
                     <androidx.constraintlayout.widget.ConstraintLayout
