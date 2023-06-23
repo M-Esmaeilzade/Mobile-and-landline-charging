@@ -55,28 +55,28 @@
             android:orientation="vertical">
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/landlineNoLayout"
+                android:id="@+id/landlineLayout"
                 android:layout_width="match_parent"
                 android:layout_height="214dp"
                 android:layout_margin="10dp"
                 android:layout_weight="1">
 
                 <androidx.appcompat.widget.AppCompatTextView
-                    android:id="@+id/lblEnterLandlineNo"
+                    android:id="@+id/lblEnterLandline"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="32dp"
                     android:text="شماره تلفن ثابت خود را وارد کن"
                     android:textSize="20dp"
                     android:textColor="@color/black"
-                    app:layout_constraintBottom_toTopOf="@id/txtLandlineNo"
+                    app:layout_constraintBottom_toTopOf="@id/txtLandline"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.727" />
 
                 <androidx.appcompat.widget.AppCompatEditText
-                    android:id="@+id/txtLandlineNo"
+                    android:id="@+id/txtLandline"
                     android:layout_width="360dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
@@ -97,7 +97,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.39"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/lblEnterLandlineNo"
+                    app:layout_constraintTop_toBottomOf="@+id/lblEnterLandline"
                     tools:ignore="SpeakableTextPresentCheck" />
 
                 <androidx.appcompat.widget.AppCompatButton
