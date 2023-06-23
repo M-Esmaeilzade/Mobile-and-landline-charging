@@ -121,15 +121,6 @@
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <com.airbnb.lottie.LottieAnimationView
-                android:id="@+id/loadingAnimationView"
-                android:layout_width="401dp"
-                android:layout_height="528dp"
-
-                android:visibility="gone"
-                app:lottie_autoPlay="true"
-                app:lottie_loop="true"
-                 />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/endTermLayout"
