@@ -224,7 +224,6 @@
                     android:id="@+id/txtArbitrary"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
-                    android:layout_margin=""
                     android:layout_marginBottom="32dp"
                     android:ems="10"
                     android:inputType="numberDecimal"
